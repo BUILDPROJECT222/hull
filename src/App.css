@@ -79,6 +79,8 @@
   text-align: center;
   transform-style: preserve-3d;
   transition: transform 0.3s ease;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 .contract-title {
@@ -89,15 +91,44 @@
   text-shadow: 2px 2px 0 #000;
 }
 
+.contract-copy-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
 .contract-code {
   font-family: monospace;
   background: rgba(0, 0, 0, 0.7);
   color: #00ff00;
-  padding: 8px 16px;
+  padding: 8px 12px;
   border-radius: 6px;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   letter-spacing: 1px;
-  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 200px;
+}
+
+.contract-code:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.copy-button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 4px 8px;
+  transition: transform 0.3s ease;
+}
+
+.copy-button:hover {
+  transform: scale(1.2);
 }
 
 .button-container {
@@ -190,12 +221,34 @@
   }
   
   .contract-code {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    max-width: 150px;
+    padding: 6px 10px;
   }
   
   .meme-button {
     padding: 12px 24px;
     font-size: 0.8rem;
+  }
+
+  .contract-address {
+    max-width: 280px;
+    padding: 10px 15px;
+  }
+
+  .copy-button {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .contract-address {
+    max-width: 250px;
+  }
+
+  .contract-code {
+    max-width: 120px;
+    font-size: 0.7rem;
   }
 }
 

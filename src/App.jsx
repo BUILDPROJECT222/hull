@@ -35,6 +35,16 @@ function App() {
 
   const contractAddress = "7YqTcYwCp2vCrUrBT2pgz6EFBg2uFy3ShffKB5Wxpump"; // Ganti dengan contract address yang sebenarnya
 
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(contractAddress)
+      .then(() => {
+        alert('Contract address copied! 📋');
+      })
+      .catch(err => {
+        console.error('Failed to copy:', err);
+      });
+  };
+
   return (
     <>
       <div className="audio-player-wrapper">
@@ -90,7 +100,17 @@ function App() {
           <div className="contract-address-container">
             <div className="contract-address wobble">
               <p className="contract-title">✨ CONTRACT ADDRESS ✨</p>
-              <code className="contract-code">{contractAddress}</code>
+              <div className="contract-copy-wrapper">
+                <code className="contract-code" onClick={copyToClipboard}>
+                  {contractAddress}
+                </code>
+                <button 
+                  className="copy-button"
+                  onClick={copyToClipboard}
+                >
+                  📋
+                </button>
+              </div>
             </div>
           </div>
           <div className="button-container">

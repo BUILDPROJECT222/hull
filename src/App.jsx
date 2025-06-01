@@ -115,7 +115,7 @@ function App() {
           </div>
           <div className="button-container">
             <a 
-              href="https://x.com/ashtunhullsol/"
+              href=""
               target="_blank" 
               rel="noopener noreferrer" 
               className="meme-button twitter-button bounce"

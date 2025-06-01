@@ -33,7 +33,7 @@ function App() {
     backgroundImage: `url(${hullBackground})`
   };
 
-  const contractAddress = "7YqTcYwCp2vCrUrBT2pgz6EFBg2uFy3ShffKB5Wxpump"; // Ganti dengan contract address yang sebenarnya
+  const contractAddress = ""; // Ganti dengan contract address yang sebenarnya
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(contractAddress)
@@ -123,7 +123,7 @@ function App() {
               <span className="button-text">𝕏 TWITTER</span>
             </a>
             <a 
-              href="https://dexscreener.com/solana/7YqTcYwCp2vCrUrBT2pgz6EFBg2uFy3ShffKB5Wxpump"
+              href="https://dexscreener.com/solana/"
               target="_blank" 
               rel="noopener noreferrer" 
               className="meme-button buy-button shake"

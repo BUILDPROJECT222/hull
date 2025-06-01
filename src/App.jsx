@@ -108,7 +108,7 @@ function App() {
                   className="copy-button"
                   onClick={copyToClipboard}
                 >
-                  📋
+                  4iU2yAaUpqsFjq1BV2XFFsdqUUoFZTQejuPhs2Yspump📋
                 </button>
               </div>
             </div>
@@ -123,7 +123,7 @@ function App() {
               <span className="button-text">𝕏 TWITTER</span>
             </a>
             <a 
-              href="https://dexscreener.com/solana/"
+              href="https://dexscreener.com/solana/4iU2yAaUpqsFjq1BV2XFFsdqUUoFZTQejuPhs2Yspump"
               target="_blank" 
               rel="noopener noreferrer" 
               className="meme-button buy-button shake"
